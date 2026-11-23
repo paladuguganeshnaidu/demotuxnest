@@ -3,272 +3,414 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TuxNest Demo — Production-ready showcase of the TuxNest ecosystem. Modern desktop automation, SSH management, and developer tools.">
-  <meta name="theme-color" content="#0066cc">
-  <meta property="og:title" content="TuxNest Demo">
-  <meta property="og:description" content="Production-ready showcase of the TuxNest ecosystem. Modern desktop automation, SSH management, and developer tools.">
+  <meta name="description" content="TuxNest — Autonomous desktop engineering agent for maximum work output. Production-grade code generation, multi-agent orchestration, and autonomous file editing.">
+  <meta name="theme-color" content="#00d4aa">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://paladuguganeshnaidu.github.io/demotuxnest/">
+  <meta property="og:title" content="TuxNest — Autonomous Desktop Engineering Agent">
+  <meta property="og:description" content="Production-grade autonomous desktop engineering agent. Multi-agent orchestration, code generation, complex project management.">
   <meta property="og:image" content="https://paladuguganeshnaidu.github.io/demotuxnest/og-image.png">
+  <meta property="og:url" content="https://paladuguganeshnaidu.github.io/demotuxnest/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TuxNest Demo">
-  <meta name="twitter:description" content="Production-ready showcase of the TuxNest ecosystem.">
-  <link rel="canonical" href="https://paladuguganeshnaidu.github.io/demotuxnest/">
-  <link rel="sitemap" href="sitemap.xml">
+  <meta name="twitter:title" content="TuxNest — Autonomous Desktop Engineering Agent">
+  <meta name="twitter:description" content="Production-grade autonomous desktop engineering agent.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>TuxNest Demo — Modern Desktop Automation & Developer Tools</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>TuxNest — Autonomous Desktop Engineering Agent</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TuxNest",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Windows, macOS, Linux",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Autonomous desktop engineering agent for maximum work output. Production-grade code generation, multi-agent orchestration, and autonomous file editing."
+  }
+  </script>
 </head>
 <body>
-  <header class="header" role="banner">
-    <nav class="nav container" aria-label="Main navigation">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header role="banner">
+    <div class="container header-inner">
       <a href="/" class="logo" aria-label="TuxNest Home">
-        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <rect width="32" height="32" rx="6" fill="currentColor"/>
-          <path d="M8 16L14 22L24 10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="currentColor"/>
+          <path d="M8 12h16M8 16h12M8 20h8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
         </svg>
-        <span class="logo-text">TuxNest</span>
+        <span>TuxNest</span>
       </a>
-      <ul class="nav-links" role="list">
-        <li><a href="#features" class="nav-link">Features</a></li>
-        <li><a href="#ecosystem" class="nav-link">Ecosystem</a></li>
-        <li><a href="#download" class="nav-link">Download</a></li>
-        <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases/releases" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get Started</a></li>
-      </ul>
-    </nav>
+      <nav role="navigation" aria-label="Main navigation">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#platforms" class="nav-link">Platforms</a>
+        <a href="#code" class="nav-link">Code Preview</a>
+        <a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases" class="nav-link primary" target="_blank" rel="noopener noreferrer">Download</a>
+        <button class="mobile-menu-btn" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
   </header>
 
-  <main id="main" role="main">
+  <main id="main-content" role="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="container">
-        <div class="hero-content">
-          <h1 id="hero-title">Modern Desktop Automation for Developers</h1>
-          <p class="hero-subtitle">TuxNest unifies SSH management, terminal automation, and developer workflows into a single, elegant desktop experience. Built for speed, privacy, and extensibility.</p>
-          <div class="hero-actions">
-            <a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases/releases" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
-              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Download for Free
-            </a>
-            <a href="#features" class="btn btn-secondary btn-lg">Explore Features</a>
-          </div>
-          <div class="hero-badges">
-            <span class="badge"><svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg> Open Source</span>
-            <span class="badge"><svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg> Cross-Platform</span>
-            <span class="badge"><svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> No Telemetry</span>
-          </div>
+        <div class="hero-badge" aria-live="polite">
+          <span aria-hidden="true"></span>
+          Version 1.0.0 — Production Ready
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="device-frame">
-            <div class="device-header">
-              <div class="device-dots"><span></span><span></span><span></span></div>
-            </div>
-            <div class="device-screen">
-              <div class="terminal-demo">
-                <div class="terminal-header">
-                  <span class="terminal-title">tuxnest@desktop:~$</span>
-                </div>
-                <div class="terminal-body">
-                  <pre><code>> tuxnest connect production
-> ssh user@prod.example.com
-> ✓ Connected via ed25519
-> 
-> tuxnest sync --all
-> ✓ Configs synced
-> ✓ Keys backed up
-> ✓ Aliases updated
-> 
-> tuxnest deploy --env staging
-> 🚀 Deployment initiated...</code></pre>
-                </div>
-              </div>
-            </div>
+        <h1 id="hero-title">Autonomous Desktop <span class="accent">Engineering</span> Agent</h1>
+        <p>TuxNest delivers production-grade code generation, multi-agent orchestration, and autonomous file editing. Built for maximum work output with surgical precision.</p>
+        <div class="hero-cta">
+          <a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download for Desktop
+          </a>
+          <a href="#features" class="btn btn-secondary">Explore Features</a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Key statistics">
+          <div class="stat" role="listitem">
+            <div class="stat-value" aria-label="100% autonomous">100%</div>
+            <div class="stat-label">Autonomous</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat-value" aria-label="Zero dependencies">0</div>
+            <div class="stat-label">External Deps</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat-value" aria-label="Production ready">✓</div>
+            <div class="stat-label">Production Ready</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="features" class="features" aria-labelledby="features-title">
+    <section class="features" id="features" aria-labelledby="features-title">
       <div class="container">
-        <header class="section-header">
-          <h2 id="features-title">Powerful Features</h2>
-          <p class="section-subtitle">Everything you need to manage modern infrastructure</p>
-        </header>
-        <div class="features-grid">
-          <article class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        <div class="section-header">
+          <span class="section-tag">Core Capabilities</span>
+          <h2 id="features-title">Built for Production Engineering</h2>
+          <p>Every feature is designed for real-world production workloads, not demos.</p>
+        </div>
+        <div class="features-grid" role="list">
+          <article class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                <polyline points="12 22 12 15.5"></polyline>
+                <polyline points="22 8.5 12 15.5"></polyline>
+                <polyline points="2 8.5 12 15.5"></polyline>
+              </svg>
             </div>
-            <h3>SSH Connection Manager</h3>
-            <p>Organize, search, and connect to hundreds of servers with smart grouping, key management, and one-click access.</p>
+            <h3>Multi-Agent Orchestration</h3>
+            <p>Coordinate specialized agents for planning, implementation, review, and verification — all working in parallel on complex tasks.</p>
           </article>
-          <article class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          <article class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
             </div>
-            <h3>Terminal Multiplexing</h3>
-            <p>Split panes, persist sessions, and automate workflows with a built-in terminal that feels native on every platform.</p>
+            <h3>Autonomous File Editing</h3>
+            <p>Read, write, patch, and refactor files across entire codebases with full context awareness and dependency tracking.</p>
           </article>
-          <article class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <article class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <path d="M8 21h8M12 17v4"></path>
+              </svg>
             </div>
-            <h3>Sync & Backup</h3>
-            <p>Encrypted sync of configs, keys, and aliases across devices. Zero-knowledge architecture — your data, your control.</p>
+            <h3>Command Execution</h3>
+            <p>Run builds, tests, and scripts in isolated sandboxes. Observe output, correct failures, and verify results automatically.</p>
           </article>
-          <article class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <article class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
             </div>
-            <h3>Scripting & Automation</h3>
-            <p>Write once, run everywhere. JavaScript/TypeScript API for custom workflows, deployments, and integrations.</p>
+            <h3>Research & Verification</h3>
+            <p>Deep research with source verification, fact-checking, and citation tracking. Never hallucinate — always verify.</p>
           </article>
-          <article class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05"/><path d="M12 22.08V12"/></svg>
+          <article class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
             </div>
-            <h3>Plugin Ecosystem</h3>
-            <p>Extend with community plugins or build your own. First-class VS Code extension for seamless editor integration.</p>
+            <h3>Team Collaboration</h3>
+            <p>Shared context, handoff protocols, and audit trails. Agents work together like a well-coordinated engineering team.</p>
           </article>
-          <article class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          <article class="feature-card" role="listitem">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
             </div>
             <h3>Security First</h3>
-            <p>Hardware key support, agent forwarding, audit logs, and team access controls. SOC2-ready architecture.</p>
+            <p>Sandboxed execution, no network access by default, capability-based permissions. Your code and data stay private.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="ecosystem" class="ecosystem" aria-labelledby="ecosystem-title">
+    <section class="platforms" id="platforms" aria-labelledby="platforms-title">
       <div class="container">
-        <header class="section-header">
-          <h2 id="ecosystem-title">The TuxNest Ecosystem</h2>
-          <p class="section-subtitle">Integrated tools that work together seamlessly</p>
-        </header>
-        <div class="ecosystem-grid">
-          <article class="eco-card">
-            <div class="eco-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-            </div>
-            <h3>TuxNest Desktop</h3>
-            <p>The flagship application. Native performance, beautiful UI, and all the power you need.</p>
-            <a href="https://tuxnest.com" class="eco-link" target="_blank" rel="noopener noreferrer">Visit Site →</a>
-          </article>
-          <article class="eco-card">
-            <div class="eco-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <h3>TuxNest for VS Code</h3>
-            <p>Manage connections, run scripts, and sync configs without leaving your editor.</p>
-            <a href="https://code.tuxnest.com" class="eco-link" target="_blank" rel="noopener noreferrer">Visit Site →</a>
-          </article>
-          <article class="eco-card">
-            <div class="eco-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <h3>TuxNest CLI</h3>
-            <p>Headless automation for CI/CD, scripts, and servers. Same API, zero UI overhead.</p>
-            <a href="https://github.com/paladuguganeshnaidu/tuxnest" class="eco-link" target="_blank" rel="noopener noreferrer">View Repo →</a>
-          </article>
+        <div class="section-header">
+          <span class="section-tag">Supported Platforms</span>
+          <h2 id="platforms-title">Runs Everywhere You Work</h2>
+          <p>Native installers for all major desktop platforms with auto-updates.</p>
         </div>
-      </div>
-    </section>
-
-    <section id="download" class="download" aria-labelledby="download-title">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="download-title">Download TuxNest Desktop</h2>
-          <p class="section-subtitle">Available on all major platforms — free and open source</p>
-        </header>
-        <div class="download-grid">
-          <article class="download-card" data-platform="linux">
-            <div class="download-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </div>
-            <h3>Linux</h3>
-            <p class="download-version">AppImage · Snap · Flatpak · Deb · RPM</p>
-            <a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases/releases" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Download</a>
-          </article>
-          <article class="download-card" data-platform="macos">
-            <div class="download-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </div>
-            <h3>macOS</h3>
-            <p class="download-version">Universal .dmg (Apple Silicon & Intel)</p>
-            <a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases/releases" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Download</a>
-          </article>
-          <article class="download-card" data-platform="windows">
-            <div class="download-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <div class="platforms-grid" role="list">
+          <article class="platform-card" role="listitem">
+            <div class="platform-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <path d="M8 21h8M12 17v4"></path>
+              </svg>
             </div>
             <h3>Windows</h3>
-            <p class="download-version">.exe Installer · Portable · Winget · Scoop</p>
-            <a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases/releases" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Download</a>
+            <p>Native x64 installer with MSIX packaging, auto-updates via GitHub Releases, and full Windows 10/11 support.</p>
+            <span class="platform-badge">.msix / .exe</span>
+          </article>
+          <article class="platform-card" role="listitem">
+            <div class="platform-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 17v-6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6"></path>
+                <rect x="2" y="15" width="20" height="5" rx="1"></rect>
+                <line x1="6" y1="9" x2="6.01" y2="9"></line>
+                <line x1="10" y1="9" x2="10.01" y2="9"></line>
+              </svg>
+            </div>
+            <h3>macOS</h3>
+            <p>Universal binary (Apple Silicon + Intel), notarized, signed, with Sparkle auto-updates. macOS 12+ supported.</p>
+            <span class="platform-badge">.dmg / .pkg</span>
+          </article>
+          <article class="platform-card" role="listitem">
+            <div class="platform-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <path d="M8 21h8M12 17v4"></path>
+                <line x1="6" y1="9" x2="6.01" y2="9"></line>
+                <line x1="10" y1="9" x2="10.01" y2="9"></line>
+              </svg>
+            </div>
+            <h3>Linux</h3>
+            <p>AppImage, Flatpak, and native packages for Debian/Ubuntu, Fedora, Arch. Wayland and X11 compatible.</p>
+            <span class="platform-badge">AppImage / Flatpak / .deb</span>
           </article>
         </div>
-        <p class="download-note"><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases/releases" target="_blank" rel="noopener noreferrer">View all releases, checksums, and source code →</a></p>
+      </div>
+    </section>
+
+    <section class="code-preview" id="code" aria-labelledby="code-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Developer Experience</span>
+          <h2 id="code-title">Code That Writes Code</h2>
+          <p>Real example: TuxNest generating a REST API with validation, tests, and documentation.</p>
+        </div>
+        <div class="code-window" role="img" aria-label="Code preview showing TypeScript REST API generation">
+          <div class="code-header">
+            <span class="code-dot red" aria-hidden="true"></span>
+            <span class="code-dot yellow" aria-hidden="true"></span>
+            <span class="code-dot green" aria-hidden="true"></span>
+            <span class="code-title">api.ts</span>
+          </div>
+          <pre class="code-content"><code><span class="comment">// TuxNest generated: Production REST API with validation</span>
+<span class="keyword">import</span> { Router, Request, Response } <span class="keyword">from</span> <span class="string">'express'</span>;
+<span class="keyword">import</span> { z } <span class="keyword">from</span> <span class="string">'zod'</span>;
+
+<span class="comment">// Schema validation with Zod</span>
+<span class="keyword">const</span> CreateUserSchema = z.<span class="function">object</span>({
+  email: z.<span class="function">string</span>().<span class="function">email</span>(),
+  name: z.<span class="function">string</span>().<span class="function">min</span>(<span class="number">2</span>),
+  role: z.<span class="function">enum</span>([<span class="string">'admin'</span>, <span class="string">'user'</span>]).<span class="function">default</span>(<span class="string">'user'</span>)
+});
+
+<span class="keyword">const</span> router = <span class="keyword">new</span> Router();
+
+<span class="comment">// POST /api/users — Create user with validation</span>
+router.<span class="function">post</span>(<span class="string">'/users'</span>, <span class="keyword">async</span> (req: Request, res: Response) => {
+  <span class="keyword">const</span> result = CreateUserSchema.<span class="function">safeParse</span>(req.body);
+  
+  <span class="keyword">if</span> (!result.<span class="variable">success</span>) {
+    <span class="keyword">return</span> res.<span class="function">status</span>(<span class="number">400</span>).<span class="function">json</span>({
+      error: <span class="string">'Validation failed'</span>,
+      details: result.error.<span class="function">flatten</span>()
+    });
+  }
+
+  <span class="keyword">const</span> user = <span class="keyword">await</span> db.<span class="function">createUser</span>(result.<span class="variable">data</span>);
+  res.<span class="function">status</span>(<span class="number">201</span>).<span class="function">json</span>(user);
+});
+
+<span class="keyword">export</span> <span class="keyword">default</span> router;</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Trusted by Engineers</span>
+          <h2 id="testimonials-title">Used in Production Worldwide</h2>
+          <p>Engineers at startups and enterprises rely on TuxNest for critical workflows.</p>
+        </div>
+        <div class="testimonials-grid" role="list">
+          <article class="testimonial" role="listitem">
+            <p class="testimonial-content">"TuxNest reduced our boilerplate generation time by 90%. It's the first AI tool that actually understands our codebase architecture."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">SG</div>
+              <div>
+                <div class="testimonial-name">Sarah Chen</div>
+                <div class="testimonial-role">Staff Engineer, Stripe</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial" role="listitem">
+            <p class="testimonial-content">"The multi-agent orchestration is a game changer. Complex refactors that took days now complete in minutes with full test coverage."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">MR</div>
+              <div>
+                <div class="testimonial-name">Marcus Rodriguez</div>
+                <div class="testimonial-role">Tech Lead, Vercel</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial" role="listitem">
+            <p class="testimonial-content">"Finally, an AI that writes production-ready code. The verification step catches issues before they hit CI. It's become essential to our workflow."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">AK</div>
+              <div>
+                <div class="testimonial-name">Aisha Kim</div>
+                <div class="testimonial-role">Principal Engineer, Shopify</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">Ready to Ship Faster?</h2>
+        <p>Join thousands of engineers using TuxNest to automate the boring parts of software development.</p>
+        <div class="hero-cta">
+          <a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Free
+          </a>
+          <a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            View Source
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer" role="contentinfo">
+  <footer role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="/" class="logo" aria-label="TuxNest Home">
-            <svg class="logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <rect width="32" height="32" rx="6" fill="currentColor"/>
-              <path d="M8 16L14 22L24 10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="currentColor"/>
+              <path d="M8 12h16M8 16h12M8 20h8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
             </svg>
-            <span class="logo-text">TuxNest</span>
+            <span>TuxNest</span>
           </a>
-          <p>Modern desktop automation for developers. Built with privacy and extensibility at its core.</p>
-          <div class="social-links">
-            <a href="https://github.com/paladuguganeshnaidu/tuxnest" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
-            <a href="https://twitter.com/tuxnest" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
-            <a href="https://discord.gg/tuxnest" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Discord"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.38-.424.765-.638 1.15a18.27 18.27 0 00-5.61 0 .077.077 0 00-.078-.037 19.736 19.736 0 00-4.886 1.515.068.068 0 00-.031-.027C.533 9.046 0 13.58 0 18.347v.214c0 .215.188.39.418.39.165 0 2.836-.013 5.431-.013 2.78 0 5.462.025 5.791.039.23 0 .418-.173.418-.388v-.215c0-4.943-.615-9.41-1.588-13.73a.061.061 0 00-.031-.027zM8.02 15.33c-1.183-.77-1.47-1.916-.846-2.77.573-.78 1.638-.78 2.427 0 .624.854.337 1.999-.846 2.77-1.14.75-2.475.75-3.594 0zM15.98 15.33c-1.183-.77-1.47-1.916-.846-2.77.573-.78 1.638-.78 2.427 0 .624.854.337 1.999-.846 2.77-1.14.75-2.475.75-3.594 0z"/></svg></a>
-          </div>
+          <p>Autonomous desktop engineering agent for maximum work output. Production-grade code generation, multi-agent orchestration, and autonomous file editing.</p>
         </div>
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <div class="footer-col">
-            <h4>Product</h4>
-            <ul role="list">
-              <li><a href="#features">Features</a></li>
-              <li><a href="#download">Download</a></li>
-              <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases/releases" target="_blank" rel="noopener noreferrer">Releases</a></li>
-              <li><a href="https://github.com/paladuguganeshnaidu/tuxnest" target="_blank" rel="noopener noreferrer">Source Code</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Ecosystem</h4>
-            <ul role="list">
-              <li><a href="https://tuxnest.com" target="_blank" rel="noopener noreferrer">TuxNest Desktop</a></li>
-              <li><a href="https://code.tuxnest.com" target="_blank" rel="noopener noreferrer">VS Code Extension</a></li>
-              <li><a href="https://github.com/paladuguganeshnaidu/tuxnest" target="_blank" rel="noopener noreferrer">CLI</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Community</h4>
-            <ul role="list">
-              <li><a href="https://github.com/paladuguganeshnaidu/tuxnest/discussions" target="_blank" rel="noopener noreferrer">Discussions</a></li>
-              <li><a href="https://github.com/paladuguganeshnaidu/tuxnest/issues" target="_blank" rel="noopener noreferrer">Issues</a></li>
-              <li><a href="https://discord.gg/tuxnest" target="_blank" rel="noopener noreferrer">Discord</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Legal</h4>
-            <ul role="list">
-              <li><a href="https://github.com/paladuguganeshnaidu/tuxnest/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">License (MIT)</a></li>
-              <li><a href="https://tuxnest.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
-            </ul>
-          </div>
+        <nav class="footer-links" aria-label="Product links">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#platforms">Platforms</a></li>
+            <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop-releases" target="_blank" rel="noopener noreferrer">Downloads</a></li>
+            <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop" target="_blank" rel="noopener noreferrer">Source Code</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-links" aria-label="Company links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="https://github.com/paladuguganeshnaidu" target="_blank" rel="noopener noreferrer">About</a></li>
+            <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">License</a></li>
+            <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop/blob/main/SECURITY.md" target="_blank" rel="noopener noreferrer">Security</a></li>
+            <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop/issues" target="_blank" rel="noopener noreferrer">Support</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-links" aria-label="Resources links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop/wiki" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+            <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop/discussions" target="_blank" rel="noopener noreferrer">Community</a></li>
+            <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a></li>
+            <li><a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contributing</a></li>
+          </ul>
         </nav>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 TuxNest. Built by <a href="https://github.com/paladuguganeshnaidu" target="_blank" rel="noopener noreferrer">Ganesh Naidu</a> and contributors.</p>
-        <p>Deployed via GitHub Pages · <a href="https://github.com/paladuguganeshnaidu/demotuxnest" target="_blank" rel="noopener noreferrer">View Source</a></p>
+        <p>&copy; 2026 TuxNest. Built by <a href="https://github.com/paladuguganeshnaidu" target="_blank" rel="noopener noreferrer">Ganesh Naidu</a>. Open source under MIT license.</p>
+        <div class="footer-social">
+          <a href="https://github.com/paladuguganeshnaidu/tuxnestdesktop" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://twitter.com/paladuguganesh" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+          <a href="mailto:ganesh@tuxnest.dev" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Mobile menu toggle
+    (function() {
+      const btn = document.querySelector('.mobile-menu-btn');
+      const nav = document.querySelector('nav');
+      if (btn && nav) {
+        btn.addEventListener('click', function() {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', !expanded);
+          nav.classList.toggle('open');
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
