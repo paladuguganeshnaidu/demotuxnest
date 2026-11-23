@@ -1,0 +1,17 @@
+{
+  "name": "TuxNest",
+  "short_name": "TuxNest",
+  "description": "Autonomous desktop engineering agent for maximum work output",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d14",
+  "theme_color": "#00d4aa",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
